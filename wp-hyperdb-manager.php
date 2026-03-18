@@ -14,6 +14,7 @@
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: wp-hyperdb-manager
  * Domain Path: /languages
+ * Update URI: https://updates.wenpai.net
  */
 
 // 防止直接访问
@@ -26,6 +27,9 @@ define( 'HYPERDB_MANAGER_VERSION', '1.0.0' );
 define( 'HYPERDB_MANAGER_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'HYPERDB_MANAGER_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'HYPERDB_MANAGER_PLUGIN_FILE', __FILE__ );
+
+require_once HYPERDB_MANAGER_PLUGIN_DIR . 'includes/class-wenpai-updater.php';
+new WenPai_Updater( plugin_basename( __FILE__ ), HYPERDB_MANAGER_VERSION );
 
 /**
  * HyperDB管理器主类
