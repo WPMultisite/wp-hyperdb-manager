@@ -29,7 +29,7 @@ define( 'HYPERDB_MANAGER_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'HYPERDB_MANAGER_PLUGIN_FILE', __FILE__ );
 
 require_once HYPERDB_MANAGER_PLUGIN_DIR . 'includes/class-wenpai-updater.php';
-new WenPai_Updater( plugin_basename( __FILE__ ), HYPERDB_MANAGER_VERSION );
+new WP_HyperDB_Manager_Updater( plugin_basename( __FILE__ ), HYPERDB_MANAGER_VERSION );
 
 /**
  * HyperDB管理器主类

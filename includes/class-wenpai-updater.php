@@ -20,11 +20,11 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-if ( class_exists( 'WenPai_Updater' ) ) {
+if ( class_exists( 'WP_HyperDB_Manager_Updater' ) ) {
     return;
 }
 
-class WenPai_Updater {
+class WP_HyperDB_Manager_Updater {
 
     /**
      * 更新器版本号。
